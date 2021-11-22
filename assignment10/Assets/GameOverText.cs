@@ -12,9 +12,7 @@ public class GameOverText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        print("start");
         text = GameObject.Find("CompleteText").GetComponent<Text>();
-
         text.gameObject.SetActive(false);
     }
 
@@ -26,8 +24,6 @@ public class GameOverText : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("trigger");
-
         text.gameObject.SetActive(true);
     }
 }
